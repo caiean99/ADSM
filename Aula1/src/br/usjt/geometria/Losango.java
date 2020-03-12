@@ -13,7 +13,12 @@ public class Losango extends Poligono {
 
 	@Override
 	public String toString() {
-		return "Losango [area()=" + area() + "]";
+		return "Losango [area()=" + area() + "Perimetro =" + perimetro() + "]";
+	}
+
+	@Override
+	public double perimetro() {
+		return 4 * getBase();
 	}
 
 }

@@ -1,6 +1,6 @@
 package br.usjt.geometria;
 
-public class Triangulo extends Poligono implements Diagonal {
+public class Triangulo extends Poligono {
 
 	public Triangulo(double base, double altura) {
 		super(base, altura);
@@ -14,12 +14,12 @@ public class Triangulo extends Poligono implements Diagonal {
 
 	@Override
 	public String toString() {
-		return "Triangulo [area()=" + area() + "]";
+		return "Triangulo [area()=" + area() + "Perimetro =" + perimetro() + "]";
 	}
 
 	@Override
-	public double diagonal() {
-		return Math.sqrt(Math.pow(getBase(), 2) + Math.pow(getAltura(), 2));
+	public double perimetro() {
+		return getBase() + 2 * Math.sqrt(Math.pow(getBase(), 2) + Math.pow(getAltura(), 2));
 	}
 
 }
