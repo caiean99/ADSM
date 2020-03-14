@@ -15,7 +15,7 @@ public class Esfera extends Circulo implements Volume {
 
 	@Override
 	public String toString() {
-		return "Esfera [volume()=" + volume() + "]";
+		return "Esfera [Volume = " + volume() + "]\n";
 	}
 
 

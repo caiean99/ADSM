@@ -15,7 +15,7 @@ public class Cilindro extends Circulo implements Volume {
 
 	@Override
 	public String toString() {
-		return "Cilindro [volume()=" + volume() + "]";
+		return "Cilindro [Volume = " + volume() + "]\n";
 	}
 
 }

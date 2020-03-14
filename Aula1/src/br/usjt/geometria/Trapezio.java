@@ -21,7 +21,7 @@ public class Trapezio extends Poligono {
 
 	@Override
 	public String toString() {
-		return "Trape [area()=" + area() + ", perimetro()=" + perimetro() + "]";
+		return "Trapezio [Area = " + area() + ", Perimetro = " + perimetro() + "]\n";
 	}
 	
 

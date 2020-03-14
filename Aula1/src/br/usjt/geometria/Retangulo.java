@@ -14,7 +14,7 @@ public class Retangulo extends Poligono implements Diagonal {
 
 	@Override
 	public String toString() {
-		return "Retangulo [area()=" + area() + "Perimetro =" + perimetro() + "]";
+		return "Retangulo [Area = " + area() + "Perimetro = " + perimetro() + "]\n";
 	}
 
 	@Override

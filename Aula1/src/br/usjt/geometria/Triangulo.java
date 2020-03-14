@@ -4,7 +4,6 @@ public class Triangulo extends Poligono {
 
 	public Triangulo(double base, double altura) {
 		super(base, altura);
-		// TODO Auto-generated constructor stub
 	}
 
 	@Override
@@ -13,13 +12,12 @@ public class Triangulo extends Poligono {
 	}
 
 	@Override
-	public String toString() {
-		return "Triangulo [area()=" + area() + "Perimetro =" + perimetro() + "]";
+	public double perimetro() {
+		return Math.sqrt(Math.pow(getBase(), 2) + Math.pow(getAltura(), 2));
 	}
 
 	@Override
-	public double perimetro() {
-		return getBase() + 2 * Math.sqrt(Math.pow(getBase(), 2) + Math.pow(getAltura(), 2));
+	public String toString() {
+		return "Triangulo [Area = " + area() + ", Perimetro = " + perimetro() + "]\n";
 	}
-
 }

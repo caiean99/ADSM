@@ -14,7 +14,7 @@ public class Cubo extends Quadrado implements Volume {
 
 	@Override
 	public String toString() {
-		return "Cubo [volume()=" + volume() + "]";
+		return "Cubo [Volume = " + volume() + "]\n";
 	}
 	
 

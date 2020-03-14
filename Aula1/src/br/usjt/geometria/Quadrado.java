@@ -13,7 +13,7 @@ public class Quadrado extends Poligono implements Diagonal {
 
 	@Override
 	public String toString() {
-		return "Quadrado [area()=" + area() + "Perimetro =" + perimetro() + "]";
+		return "Quadrado [Area = " + area() + "Perimetro = " + perimetro() + "]\n";
 	}
 
 	@Override
