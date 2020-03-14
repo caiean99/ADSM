@@ -1,10 +1,9 @@
 package br.usjt.geometria;
 
-public class Triangulo extends Poligono implements Diagonal {
+public class Triangulo extends Poligono {
 
 	public Triangulo(double base, double altura) {
 		super(base, altura);
-		// TODO Auto-generated constructor stub
 	}
 
 	@Override
@@ -13,13 +12,12 @@ public class Triangulo extends Poligono implements Diagonal {
 	}
 
 	@Override
-	public String toString() {
-		return "Triangulo [area()=" + area() + "]";
-	}
-
-	@Override
-	public double diagonal() {
+	public double perimetro() {
 		return Math.sqrt(Math.pow(getBase(), 2) + Math.pow(getAltura(), 2));
 	}
 
+	@Override
+	public String toString() {
+		return "Triangulo [Area = " + area() + ", Perimetro = " + perimetro() + "]\n";
+	}
 }
